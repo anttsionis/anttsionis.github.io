@@ -1,0 +1,21 @@
+:root { --max: 980px; }
+body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; margin:0; line-height:1.55; color:#111; }
+header { border-bottom: 1px solid #eee; background:#fff; position:sticky; top:0; }
+nav { max-width: var(--max); margin: 0 auto; padding: 16px; display:flex; gap:14px; flex-wrap:wrap; align-items:center; }
+nav a { text-decoration:none; color:#111; opacity:0.85; }
+nav a:hover { opacity:1; text-decoration:underline; }
+.brand { font-weight:700; margin-right:10px; }
+main { max-width: var(--max); margin: 0 auto; padding: 28px 16px 60px; }
+h1 { font-size: 32px; margin: 0 0 6px; }
+.subtitle { font-size: 16px; opacity:0.85; margin:0 0 22px; }
+.grid { display:grid; grid-template-columns: repeat(3, 1fr); gap:14px; margin: 18px 0 22px; }
+.card { border:1px solid #eee; border-radius: 14px; padding: 16px; background:#fff; }
+.card h3 { margin:0 0 10px; font-size: 16px; }
+.card ul { margin:0; padding-left:18px; }
+.actions { display:flex; gap:10px; flex-wrap:wrap; margin-top: 14px; }
+.btn { display:inline-block; padding:10px 12px; border-radius: 12px; border:1px solid #111; text-decoration:none; color:#111; }
+.btn.secondary { border-color:#eee; }
+.small { font-size: 13px; opacity:0.8; margin-top: 26px; }
+footer { border-top: 1px solid #eee; }
+footer .inner { max-width: var(--max); margin: 0 auto; padding: 18px 16px; font-size: 13px; opacity:0.85; }
+@media (max-width: 850px){ .grid { grid-template-columns: 1fr; } }
